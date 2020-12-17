@@ -23,7 +23,7 @@ model.fit(boston, boston_y)
 model.intercept_
 model.coef_
 coef_table=pd.DataFrame(model.coef_,index=boston.columns)
-np.abs(coef_table).sort_values(by=0,ascending=False)
+print(np.abs(coef_table).sort_values(by=0,ascending=False))
 # the best impactable factor is NOX and the least is AGE
 
 # Part 2
